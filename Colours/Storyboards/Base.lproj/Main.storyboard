@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home ScreenVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Colours" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Vx-8P-ZwX"/>
+                        <viewControllerLayoutGuide type="bottom" id="o6Y-jv-Pjf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOURS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryU-Bl-USf">
+                                <rect key="frame" x="70" y="244" width="250" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="fFx-1Q-nUW"/>
+                                    <constraint firstAttribute="width" constant="250" id="pVL-xQ-NpM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.78022271471964921" blue="0.65805483267800591" alpha="0.79786237501940194" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amo-2A-Z0J">
+                                <rect key="frame" x="70" y="328" width="90" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.83023100048249066" blue="0.59869706498903386" alpha="0.59997133008476833" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="FLQ-Tc-IIH"/>
+                                    <constraint firstAttribute="height" constant="40" id="aVN-Sq-aOX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" white="1" alpha="0.69922188259907903" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Of-tU-Vgc" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Q8R-I4-urW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6V-CT-Swk">
+                                <rect key="frame" x="70" y="388" width="90" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.83023100049999998" blue="0.59869706499999997" alpha="0.59997133010000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8d5-K4-el3"/>
+                                    <constraint firstAttribute="width" constant="90" id="paY-t9-1To"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <state key="normal" title="help">
+                                    <color key="titleColor" white="1" alpha="0.70025574134675084" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nDC-cg-4Cd" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="uDN-rJ-DfU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="023-mX-JsA">
+                                <rect key="frame" x="70" y="448" width="90" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.83023100049999998" blue="0.59869706499999997" alpha="0.59997133010000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TbJ-BN-I5A"/>
+                                    <constraint firstAttribute="width" constant="90" id="t8Y-mq-ylo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="theme">
+                                    <color key="titleColor" white="1" alpha="0.70199160544288075" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorShifter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMz-Pe-vMP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Amo-2A-Z0J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="BKb-FT-YtB"/>
+                            <constraint firstItem="Amo-2A-Z0J" firstAttribute="top" secondItem="ryU-Bl-USf" secondAttribute="bottom" constant="20" id="RBS-VQ-Zm0"/>
+                            <constraint firstItem="ryU-Bl-USf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="a3S-5K-3Fw"/>
+                            <constraint firstItem="023-mX-JsA" firstAttribute="top" secondItem="Z6V-CT-Swk" secondAttribute="bottom" constant="20" id="aBj-qC-OZA"/>
+                            <constraint firstItem="023-mX-JsA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="lAu-8f-tuK"/>
+                            <constraint firstItem="Z6V-CT-Swk" firstAttribute="top" secondItem="Amo-2A-Z0J" secondAttribute="bottom" constant="20" id="lm0-Qp-2Nw"/>
+                            <constraint firstItem="ryU-Bl-USf" firstAttribute="top" secondItem="0Vx-8P-ZwX" secondAttribute="bottom" constant="200" id="pCw-Km-CCa"/>
+                            <constraint firstItem="Z6V-CT-Swk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="yjt-iO-i7s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1148" y="-137"/>
+        </scene>
+        <!--PlayVC-->
+        <scene sceneID="Jgq-EO-fve">
+            <objects>
+                <viewController id="0Of-tU-Vgc" customClass="PlayVC" customModule="Colours" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rMo-du-9O1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ySD-k0-J9n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2au-FS-FnF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-Lm-Bbb">
+                                <rect key="frame" x="42" y="66" width="25" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0i3-ev-ugw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="908-i7-pzR"/>
+                                    <constraint firstAttribute="width" constant="25" id="qtT-NI-FJ0"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="pause">
+                                    <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="HomeBtnTimerReset:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="mwV-jX-hd9"/>
+                                    <segue destination="tC1-S7-jpF" kind="unwind" animates="NO" unwindAction="unwindFromPlayVCWithUnwindSegue:" id="lMB-D8-LIu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-Fa-IBf">
+                                <rect key="frame" x="347" y="66" width="25" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="6Af-bP-cTQ"/>
+                                    <constraint firstAttribute="width" constant="25" id="AlT-za-m5M"/>
+                                    <constraint firstAttribute="height" constant="22" id="U9P-Q6-8Ik"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="restart">
+                                    <imageReference key="image" image="restart.circle" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="RestartBtnTimerReset:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="7Bx-vP-U3a"/>
+                                    <segue destination="f4s-UB-9fb" kind="presentation" identifier="gameOver" animates="NO" modalPresentationStyle="fullScreen" id="kYT-F8-3Jl"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9qS-gc-lp3">
+                                <rect key="frame" x="80.5" y="387.5" width="253" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-5b-6fy">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRA-nz-mGV">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="hDw-II-abU"/>
+                                                    <constraint firstAttribute="width" constant="75" id="pZo-BD-iXy"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton1:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="cTD-JS-tHc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvt-Kc-4xq">
+                                                <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="Wxu-PS-fXi"/>
+                                                    <constraint firstAttribute="width" constant="75" id="zUU-8U-oMZ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton2:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="ZBg-d6-Yjm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNA-1G-QzF" userLabel="Button3">
+                                                <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="TSh-ec-fV8"/>
+                                                    <constraint firstAttribute="height" constant="75" id="vhG-Jy-owg"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton3:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="XbT-AG-ZGd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="DgB-h2-nS5">
+                                        <rect key="frame" x="0.0" y="83" width="253" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snp-BW-3s0">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="PYr-Wh-U9q"/>
+                                                    <constraint firstAttribute="width" constant="75" id="YnR-Sq-vtM"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton4:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="V2S-Wo-5aU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9y-I8-dDm">
+                                                <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="uZi-sV-Ic9"/>
+                                                    <constraint firstAttribute="width" constant="75" id="vhm-q8-8ud"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton5:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="L3e-Vk-CCj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPc-th-KbN" userLabel="Button3">
+                                                <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="LBS-Ox-y0D"/>
+                                                    <constraint firstAttribute="height" constant="75" id="yAH-tb-F2m"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton6:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="5gq-6L-yf6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="33l-Ny-mKB">
+                                        <rect key="frame" x="0.0" y="166" width="253" height="75"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-2L-m9m">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="ApL-sO-29O"/>
+                                                    <constraint firstAttribute="height" constant="75" id="s3Z-So-cq9"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton7:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="5W3-vL-YEV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4Z-JX-0a5" userLabel="Button3">
+                                                <rect key="frame" x="89" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="BKm-AH-oEp"/>
+                                                    <constraint firstAttribute="width" constant="75" id="ju0-CC-6NQ"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton8:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="PdC-7G-I8d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kru-4a-d9C" userLabel="Button4">
+                                                <rect key="frame" x="178" y="0.0" width="75" height="75"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="lWl-ZG-pmq"/>
+                                                    <constraint firstAttribute="width" constant="75" id="uAf-uI-JSN"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="ManageButton9:" destination="0Of-tU-Vgc" eventType="touchUpInside" id="LKu-WT-V8j"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-6K-BaJ">
+                                <rect key="frame" x="137" y="64" width="140" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30158784373706538" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="MMn-WN-FB3"/>
+                                    <constraint firstAttribute="width" constant="140" id="cCG-pI-LRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80019919288079466" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-Wm-HLp">
+                                <rect key="frame" x="107" y="269" width="200" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4GK-C3-d8K"/>
+                                    <constraint firstAttribute="width" constant="200" id="lIc-rL-Qii"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oa-U3-Wie">
+                                <rect key="frame" x="157" y="99" width="100" height="20"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30158784370000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4P9-a6-oq6"/>
+                                    <constraint firstAttribute="height" constant="20" id="Y3D-Nv-OyZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80019919289999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cF-pT-ts8">
+                                <rect key="frame" x="169.5" y="144" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.296077602" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="haE-NC-tns"/>
+                                    <constraint firstAttribute="width" constant="75" id="puk-Sy-D0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80809081630000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1oa-U3-Wie" firstAttribute="centerX" secondItem="2au-FS-FnF" secondAttribute="centerX" id="2oK-Ng-ix5"/>
+                            <constraint firstItem="TcO-Lm-Bbb" firstAttribute="leading" secondItem="2au-FS-FnF" secondAttribute="leadingMargin" constant="22" id="5go-bY-xT3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U9S-Fa-IBf" secondAttribute="trailing" constant="22" id="5s8-H8-98S"/>
+                            <constraint firstItem="9qS-gc-lp3" firstAttribute="centerX" secondItem="2au-FS-FnF" secondAttribute="centerX" id="Gkr-yt-e98"/>
+                            <constraint firstItem="1oa-U3-Wie" firstAttribute="top" secondItem="Voy-6K-BaJ" secondAttribute="bottom" constant="10" id="L1P-MO-2fa"/>
+                            <constraint firstItem="TcO-Lm-Bbb" firstAttribute="top" secondItem="rMo-du-9O1" secondAttribute="bottom" constant="22" id="MIJ-yP-Gp2"/>
+                            <constraint firstItem="0cF-pT-ts8" firstAttribute="centerX" secondItem="2au-FS-FnF" secondAttribute="centerX" id="WWT-75-n6l"/>
+                            <constraint firstItem="9qS-gc-lp3" firstAttribute="centerY" secondItem="2au-FS-FnF" secondAttribute="centerY" constant="60" id="iRB-eL-UNp"/>
+                            <constraint firstItem="Voy-6K-BaJ" firstAttribute="top" secondItem="rMo-du-9O1" secondAttribute="bottom" constant="20" id="iiZ-6Q-0xW"/>
+                            <constraint firstItem="U9S-Fa-IBf" firstAttribute="top" secondItem="rMo-du-9O1" secondAttribute="bottom" constant="22" id="oht-nc-8Bm"/>
+                            <constraint firstItem="oSS-Wm-HLp" firstAttribute="centerX" secondItem="2au-FS-FnF" secondAttribute="centerX" id="qAN-fP-4ov"/>
+                            <constraint firstItem="oSS-Wm-HLp" firstAttribute="top" secondItem="1oa-U3-Wie" secondAttribute="bottom" constant="150" id="qcN-QD-DNd"/>
+                            <constraint firstItem="Voy-6K-BaJ" firstAttribute="centerX" secondItem="2au-FS-FnF" secondAttribute="centerX" id="utZ-St-Rbv"/>
+                            <constraint firstItem="0cF-pT-ts8" firstAttribute="top" secondItem="1oa-U3-Wie" secondAttribute="bottom" constant="25" id="xlS-su-3du"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UhN-qI-aSf"/>
+                    <connections>
+                        <outlet property="BestScoreLabel" destination="1oa-U3-Wie" id="cQB-e1-luG"/>
+                        <outlet property="Button1" destination="QRA-nz-mGV" id="gcA-Qm-L0Q"/>
+                        <outlet property="Button2" destination="fvt-Kc-4xq" id="Bl5-hY-d8h"/>
+                        <outlet property="Button3" destination="WNA-1G-QzF" id="Y7x-PU-a0j"/>
+                        <outlet property="Button4" destination="Snp-BW-3s0" id="e19-8o-Q5C"/>
+                        <outlet property="Button5" destination="i9y-I8-dDm" id="ePx-vH-8pK"/>
+                        <outlet property="Button6" destination="uPc-th-KbN" id="uiO-iN-v5d"/>
+                        <outlet property="Button7" destination="DgL-2L-m9m" id="xWG-93-zZR"/>
+                        <outlet property="Button8" destination="U4Z-JX-0a5" id="FyW-7j-xeb"/>
+                        <outlet property="Button9" destination="kru-4a-d9C" id="wrL-K3-NcC"/>
+                        <outlet property="RestartButton" destination="U9S-Fa-IBf" id="OPN-7Y-EAV"/>
+                        <outlet property="ScoreLabel" destination="Voy-6K-BaJ" id="xNo-1P-VZk"/>
+                        <outlet property="TargetColorLabel" destination="oSS-Wm-HLp" id="xvk-Dl-9mk"/>
+                        <outlet property="TimerLabel" destination="0cF-pT-ts8" id="LTC-tA-ad4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5q-qA-TwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="tC1-S7-jpF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="-137"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="6fd-7e-EsM">
+            <objects>
+                <viewController id="nDC-cg-4Cd" customClass="ProfileVC" customModule="Colours" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jDh-DM-bnI"/>
+                        <viewControllerLayoutGuide type="bottom" id="NgI-C2-cHP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8L-oi-0fj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Iv-HR-CoP">
+                                <rect key="frame" x="42" y="66" width="25" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="WSZ-nU-hHG"/>
+                                    <constraint firstAttribute="height" constant="22" id="Wdg-1e-eT7"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0d6-UH-pSi" kind="unwind" animates="NO" unwindAction="unwindFromInstructionsVCWithUnwindSegue:" id="sgN-KJ-U1T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5af-LC-pQ3">
+                                <rect key="frame" x="49.5" y="128" width="315" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="okD-Zj-d2s"/>
+                                    <constraint firstAttribute="height" constant="68" id="xQM-iD-r5y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="47"/>
+                                <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="0.798083273780267" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATCH EACH SQUARE TO THE TARGET COLOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elM-AS-vHR">
+                                <rect key="frame" x="82" y="236" width="250" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="hb7-h1-5nO"/>
+                                    <constraint firstAttribute="width" constant="250" id="tuU-tX-Piz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345344189775" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EACH TAP WILL CHANGE THE COLOR OF THE SQUARE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTU-X9-k28">
+                                <rect key="frame" x="82" y="320" width="250" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="hjO-t4-naV"/>
+                                    <constraint firstAttribute="width" constant="250" id="ynk-0n-pKD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345340000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ONCE ALL SQUARES ARE MATCHED TO THE TARGET COLOR, THE TARGET COLOR WILL RESET" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEP-ra-9cj">
+                                <rect key="frame" x="62" y="404" width="290" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="2o6-FH-yiG"/>
+                                    <constraint firstAttribute="height" constant="80" id="acF-wx-A6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345340000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10 POINTS FOR MATCHING ALL SQUARES TO THE TARGET COLOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R90-9O-Lf0">
+                                <rect key="frame" x="57" y="584" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YND-sA-nts"/>
+                                    <constraint firstAttribute="width" constant="300" id="ifZ-Tg-YEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345340000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE THE MOST POINTS IN 60 SECONDS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL1-yj-zVI">
+                                <rect key="frame" x="82" y="654" width="250" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Dd8-Dk-7uQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="ZXy-y9-iBy"/>
+                                    <constraint firstAttribute="height" constant="64" id="aLE-01-i8k"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="caP-5o-1aL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345340000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1 POINT FOR MATCHING A SQUARE TO THE TARGET COLOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYL-km-gsp">
+                                <rect key="frame" x="57" y="504" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Il9-OR-yF0"/>
+                                    <constraint firstAttribute="width" constant="300" id="OdB-Jv-pFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.90211345340000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="elM-AS-vHR" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="0YH-8W-Nnb"/>
+                            <constraint firstItem="R90-9O-Lf0" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="5cU-9e-p6A"/>
+                            <constraint firstItem="R90-9O-Lf0" firstAttribute="top" secondItem="JYL-km-gsp" secondAttribute="bottom" constant="20" id="77F-Sp-Kk9"/>
+                            <constraint firstItem="elM-AS-vHR" firstAttribute="top" secondItem="5af-LC-pQ3" secondAttribute="bottom" constant="40" id="FVF-Sg-iDp"/>
+                            <constraint firstItem="YL1-yj-zVI" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="H38-Yi-ykI"/>
+                            <constraint firstItem="ZEP-ra-9cj" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="I4U-HB-P2D"/>
+                            <constraint firstItem="3Iv-HR-CoP" firstAttribute="leading" secondItem="z8L-oi-0fj" secondAttribute="leadingMargin" constant="22" id="aS6-5c-eNY"/>
+                            <constraint firstItem="sTU-X9-k28" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="bGJ-U3-OwD"/>
+                            <constraint firstItem="sTU-X9-k28" firstAttribute="top" secondItem="elM-AS-vHR" secondAttribute="bottom" constant="20" id="bw6-Ge-uwa"/>
+                            <constraint firstItem="5af-LC-pQ3" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="qbt-jj-768"/>
+                            <constraint firstItem="JYL-km-gsp" firstAttribute="centerX" secondItem="z8L-oi-0fj" secondAttribute="centerX" id="r51-Wd-M68"/>
+                            <constraint firstItem="YL1-yj-zVI" firstAttribute="top" secondItem="R90-9O-Lf0" secondAttribute="bottom" constant="20" id="t6g-Qp-oVJ"/>
+                            <constraint firstItem="ZEP-ra-9cj" firstAttribute="top" secondItem="sTU-X9-k28" secondAttribute="bottom" constant="20" id="xHt-gM-yXW"/>
+                            <constraint firstItem="JYL-km-gsp" firstAttribute="top" secondItem="ZEP-ra-9cj" secondAttribute="bottom" constant="20" id="yf0-4d-zMl"/>
+                            <constraint firstItem="5af-LC-pQ3" firstAttribute="top" secondItem="3Iv-HR-CoP" secondAttribute="bottom" constant="40" id="z4X-yE-voe"/>
+                            <constraint firstItem="3Iv-HR-CoP" firstAttribute="top" secondItem="jDh-DM-bnI" secondAttribute="bottom" constant="22" id="zUp-Ta-4Lu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dC0-Ef-4Kg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPO-zI-aAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0d6-UH-pSi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-697.10144927536237" y="592.63392857142856"/>
+        </scene>
+        <!--Game OverVC-->
+        <scene sceneID="Ow0-Rc-T8T">
+            <objects>
+                <viewController id="f4s-UB-9fb" customClass="GameOverVC" customModule="Colours" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cWS-45-zTJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="UhW-hW-GOk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h4A-IV-Jow">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Org-CJ-b3I">
+                                <rect key="frame" x="51" y="244" width="312" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="W6k-Ag-o6Y"/>
+                                    <constraint firstAttribute="height" constant="68" id="jl3-Wa-MfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.80286624731606993" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E23-7p-n1F">
+                                <rect key="frame" x="137" y="352" width="140" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30158784370000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="9hZ-9K-cnn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="KAb-l3-GJX"/>
+                                    <constraint firstAttribute="width" constant="140" id="QHV-Xj-mGY"/>
+                                    <constraint firstAttribute="height" constant="25" id="SOz-9a-aGa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80019919289999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKQ-Xj-w3Q">
+                                <rect key="frame" x="137" y="397" width="140" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30158784370000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Z6W-f2-wgw"/>
+                                    <constraint firstAttribute="height" constant="25" id="nGw-Mk-x8N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.80019919289999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="GgW-MK-l86">
+                                <rect key="frame" x="162.5" y="457" width="89" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMS-Rx-G5R">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="1kl-hC-xfu"/>
+                                            <constraint firstAttribute="height" constant="22" id="W8L-pk-cOh"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="jeK-ay-WJl"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="pause">
+                                            <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="" animates="NO" modalPresentationStyle="fullScreen" id="0ih-ED-bA6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-N0-z7l">
+                                        <rect key="frame" x="64" y="0.0" width="25" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="6ND-Tm-Ppe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="PbM-3p-98h"/>
+                                            <constraint firstAttribute="height" constant="22" id="RUn-ol-svY"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="restart">
+                                            <imageReference key="image" image="restart.circle" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0Of-tU-Vgc" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Z3T-gI-dSC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Org-CJ-b3I" firstAttribute="top" secondItem="cWS-45-zTJ" secondAttribute="bottom" constant="200" id="3h4-df-RXk"/>
+                            <constraint firstItem="E23-7p-n1F" firstAttribute="top" secondItem="Org-CJ-b3I" secondAttribute="bottom" constant="40" id="Agt-AZ-2f9"/>
+                            <constraint firstItem="Org-CJ-b3I" firstAttribute="centerX" secondItem="h4A-IV-Jow" secondAttribute="centerX" id="DKo-58-Cg8"/>
+                            <constraint firstItem="GgW-MK-l86" firstAttribute="centerX" secondItem="h4A-IV-Jow" secondAttribute="centerX" id="KEr-yz-Oln"/>
+                            <constraint firstItem="hKQ-Xj-w3Q" firstAttribute="centerX" secondItem="h4A-IV-Jow" secondAttribute="centerX" id="Vua-Es-FA1"/>
+                            <constraint firstItem="GgW-MK-l86" firstAttribute="top" secondItem="hKQ-Xj-w3Q" secondAttribute="bottom" constant="35" id="hhW-mp-Zzj"/>
+                            <constraint firstItem="E23-7p-n1F" firstAttribute="centerX" secondItem="h4A-IV-Jow" secondAttribute="centerX" id="r5c-kn-Ac7"/>
+                            <constraint firstItem="hKQ-Xj-w3Q" firstAttribute="top" secondItem="E23-7p-n1F" secondAttribute="bottom" constant="20" id="wOG-Lf-lSu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BestScoreLabel" destination="hKQ-Xj-w3Q" id="uTQ-Ly-PI6"/>
+                        <outlet property="ScoreLabel" destination="E23-7p-n1F" id="aeN-cr-b28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55T-s1-naT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="-869"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q8R-I4-urW"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="restart.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
