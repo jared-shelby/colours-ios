@@ -1,0 +1,12 @@
+---
+:id: 58618022
+:submitters:
+- :name: Jared Shelby
+  :email: jared.shelby@yale.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2020-12-08 02:22:46.738504000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2020-12-07 18:22:46.738504000 Z
+:status: processed
+:score: 21.0
