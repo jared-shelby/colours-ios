@@ -13,9 +13,20 @@
         highest score in 60 seconds.
 
     To inspect and play COLOURS:
-        - unzip Colours.zip
-        - open XCode
-        - click on Colours.zip to open
+        - clone this repo to your local machine
+        - inspect the file structure:
+            colours-ios
+            |
+            |->Colours
+            |
+            |->Colours.xcodeproj
+            |
+            |->DESIGN.md
+            |
+            |->metadata.yml
+            |
+            |->SOURCES.md
+        - open "Colours.xcodeproj" in Xcode
         - on the left side of the screen is the file browser
             - Storyboards/LaunchScreen.storyboard contains the splash screen for Colours, a screen that shows while the app is loading
             - Storyboards/Main.storyboard contains all screens in the actual application; follow the paths to see how the screens connect;
